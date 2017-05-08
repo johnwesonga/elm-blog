@@ -116,9 +116,19 @@ blogPostForm model =
         ]
 
 
+postList : Model -> Html Msg
+postList model =
+    model.posts
+        |> List.sortBy .title
+        |> List.map post
+        |> ul []
 
--- blogPostList : Model -> Html Msg
--- blogPostList model =
+
+post : Post -> Html Msg
+post post =
+    li []
+        [ text post.title
+        ]
 
 
 view : Model -> Html Msg
@@ -127,6 +137,7 @@ view model =
         [ class "" ]
         [ h1 [] [ text "My Blog" ]
         , blogPostForm model
+        , postList model
         ]
 
 
