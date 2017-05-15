@@ -1,7 +1,7 @@
 {
     "version": "1.0.0",
-    "summary": "helpful summary of your project, less than 80 characters",
-    "repository": "https://github.com/user/project.git",
+    "summary": "Tinkering in Elm with a blog",
+    "repository": "https://github.com/johnwesonga/elm-blog.git",
     "license": "BSD3",
     "source-directories": [
         "."
